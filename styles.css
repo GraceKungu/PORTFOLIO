@@ -25,6 +25,8 @@
   .container {
     width: 90vw;
     margin: auto;
+    
+    
   }
   
   .text-center {
@@ -118,13 +120,13 @@
   
   .form-control {
     outline: none;
-    width: 100%;
+    width: 1200px;
     border-color: transparent;
     min-height: 2rem;
     font-size: 1.5rem;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px){
     .jumbotron {
       flex-direction: column;
     }
@@ -144,3 +146,8 @@
 textarea{
     font-size: 40px;
 }
+
+ section h3{
+  letter-spacing: 3px; font-weight: 200;
+  }
+  

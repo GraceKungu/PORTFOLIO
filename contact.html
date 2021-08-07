@@ -53,13 +53,17 @@
         <div>
         <label for="Name">Name*</label><br>
         <input type="text" class="form-control b box-shadow"><br>
+
     </div>
-        
+
+
+        <div style="display:inline-flex;">
         <label for="Tel">Tel:</label>
-        <input type="Tel" name="Tel" value="+254">
-        <input type="Tel" name="Tel" value="07********"><br>
-
-
+         <input type="Tel" class="form-control b box-shadow" name="Tel" value="+254" style='width: 600px;'>
+         <span>
+        <input type="Tel" class="form-control b box-shadow"  name="Tel" value="07********" style='width: 560px;'><br>
+    </span>
+    </div>
         <label for="Tel">Preffered means:<br></label>
         <input type="radio" id="Tel">
         <label for="Tel">Tel. </label>
@@ -68,7 +72,7 @@
 
 
         <label for="Product">Product*</label><br>
-          <select name="">
+          <select name="" class="form-control b box-shadow">
               <option value="web application">web application</option>
               <option value="web design">web design</option>
               <option value="web development">web development</option>
