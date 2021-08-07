@@ -1,46 +1,146 @@
-body{
+* {
+    margin: 0;
+  }
+  
+  body {
+    font-size: 1.2em;
     background:#991450;
-    font-size: 21px;
-    margin: 0.8em;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-
+   margin: 0.8em;
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+} 
+:hover{
+    background-color: rgb(166, 255, 0);
 }
- a {
-     text-decoration: none;
-     color: #fff;
-
- } 
- :hover{
-     background-color: rgb(166, 255, 0);
- }
-nav{
-    background-color: #5c2f;
-    opacity: 1;
-    line-height: 5em;
-    word-spacing: 3em;
-    }
+  
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 90vw;
+    margin: auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .navbar {
+    background-color: #060613;
+    height: 3rem !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-link {
+    color: #fff;
+    margin-right: 0.5rem;
+  }
+  
+  .nav-link:hover {
+    color: #000;
+    background: #fff;
+  }
+  
+  .jumbotron {
+    background-color: #b8b8ca;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .card {
+    width: 300px;
+    min-height: 300px;
+    margin: 0.5rem;
+  }
+  .b {
+    border: 1px solid #060613;
     
-    h1 {
-        letter-spacing: 0.3em;
+  }
+  
+  .box-shadow {
+    box-shadow: 0 0 1rem 0 #060613;
+  }
+  
+  h1 {
+    letter-spacing: 0.3em;
+}
+  
+  footer {
+    background-color: #0a0a25;
+  }
+  footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer ul li {
+    margin-right: 0.8em;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  footer p {
+    color: #fff;
+    text-align: center;
+  }
+  
+  #navbar-icon {
+    display: none;
+  }
+  
+  .form-control {
+    outline: none;
+    width: 100%;
+    border-color: transparent;
+    min-height: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .jumbotron {
+      flex-direction: column;
     }
-    footer{
-        background-color: #96687c;
-        color: #fff;
-        text-align: center;
-        
+  
+    .navbar-collapse {
+      display: none;
     }
-    
-    footer p {
-        text-align: center;
+  
+    #navbar-icon {
+      display: inline-block;
     }
-    footer ul {
-        list-style-type: none;
-    }
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-    textarea{
-        font-size: 40px;
-    }
+  }
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+}
+textarea{
+    font-size: 40px;
+}
